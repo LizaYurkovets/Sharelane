@@ -25,7 +25,7 @@ public class ZipCodeTest {
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
         browser.findElement(By.name("zip_code")).sendKeys("12345");
         browser.findElement(By.cssSelector("[value = Continue]")).click();
-        boolean element = browser.findElement(By.cssSelector("")).isDisplayed();
+        boolean element = browser.findElement(By.cssSelector("[value = Register]")).isDisplayed();
         Assert.assertTrue(element);
         browser.quit();
     }
