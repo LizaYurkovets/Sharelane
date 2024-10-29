@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class ZipCodeTest {
 
     @Test
-    public void test() {
+    public void checkZipCodeLessThan5digits() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -19,7 +19,7 @@ public class ZipCodeTest {
     }
 
     @Test
-    public void test1() {
+    public void checkZipCode5Digits() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -31,7 +31,7 @@ public class ZipCodeTest {
     }
 
     @Test
-    public void test2() {
+    public void checkZipCodeLetters() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -43,7 +43,7 @@ public class ZipCodeTest {
     }
 
     @Test
-    public void test3() {
+    public void checkZipCodeMoreThan5Digits() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -55,7 +55,7 @@ public class ZipCodeTest {
     }
 
     @Test
-    public void test4() {
+    public void checkZipCodeEmpty() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
@@ -67,7 +67,7 @@ public class ZipCodeTest {
     }
 
     @Test
-    public void test5() {
+    public void checkZipCodeSpecialCharacters() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.sharelane.com/cgi-bin/register.py");
